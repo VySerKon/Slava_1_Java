@@ -13,7 +13,7 @@ public class Slava_1_Java {
 
         open("https://duckduckgo.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=r1-0]").shouldHave(text("https://selenide.org"));
+        $("[id=r1-0]").shouldHave(text("selenide.org"));
         closeWindow();
     }
 }
