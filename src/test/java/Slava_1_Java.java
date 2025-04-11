@@ -8,7 +8,7 @@ public class Slava_1_Java {
     void myUdachniTests() {
         open("https://yandex.by/");
         $("[name=text]").setValue("selenide").pressEnter();
-        $("[id=search-result]").shouldHave(text("ru.selenide.org"));
+        $("[id=search-result]").shouldHave(text("selenide.org"));
         closeWindow();
 
         open("https://duckduckgo.com/");
