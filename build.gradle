@@ -20,7 +20,3 @@ tasks.withType(JavaCompile) {
 test {
     useJUnitPlatform()
 }
-
-test {
-    ignoreFailures = true
-}
