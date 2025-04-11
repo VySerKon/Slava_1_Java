@@ -8,11 +8,11 @@ public class Slava_1_Java {
     void myUdachniTests() {
         open("https://yandex.by/");
         $("[name=text]").setValue("selenide").pressEnter();
-        $("[id=search-result]").shouldHave(text("selenide.org"));
+        $("[id=search-result]").shouldHave(text("selenide"));
         closeWindow();
 
         open("https://duckduckgo.com/");
         $("[name=q]").setValue("selenide").pressEnter();
-        $("[id=r1-0]").shouldHave(text("selenide.org"));
+        $("[id=r1-0]").shouldHave(text("https://selenide.org"));
     }
 }
